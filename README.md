@@ -37,12 +37,6 @@ $ npm install
 $ docker-compose up -d --build
 ```
 
-2. Executar as migrations
-
-```bash
-$ docker-compose exec server npx knex migrate:latest
-```
-
 ## 📦 Desenvolvimento
 
 Acesse a aplicação na url: http://localhost:3333
