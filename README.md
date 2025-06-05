@@ -31,6 +31,12 @@ Um valor seguro para JWT_SECRET deve ser gerado e inserido no arquivo `.env`. Vo
 $ npm install
 ```
 
+#### Gerar build (pasta dist)
+
+```bash
+$ npm run build
+```
+
 #### Inicialização da aplicação
 
 1. Subir containers (Apenas local)
