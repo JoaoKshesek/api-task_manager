@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npx knex migrate:latest
-
 RUN npm run build
 
 EXPOSE 3333
