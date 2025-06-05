@@ -1,6 +1,13 @@
 import bcrypt from "bcryptjs";
 import db from "../database/connection";
-import { User } from "../types/models/user";
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  created_at?: Date;
+  updated_at?: Date;
+}
 
 const SALT_ROUNDS = 12;
 

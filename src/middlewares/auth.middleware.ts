@@ -1,6 +1,13 @@
 import jwt from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
-import { User } from "../types/models/user"; 
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  created_at?: Date;
+  updated_at?: Date;
+}
 
 const JWT_SECRET = process.env.JWT_SECRET;
 

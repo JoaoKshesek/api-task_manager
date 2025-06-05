@@ -1,6 +1,22 @@
 import db from "../database/connection";
-import { Task } from "../types/models/task";
-import { TaskListParams } from "../types/queries/task-list";
+interface Task {
+  id: number;
+  user_id: number;
+  title: string;
+  description: string;
+  due_date: string;
+  status: "not_started" | "in_progress" | "completed" | "cancelled";
+  created_at: string;
+  updated_at: string;
+}
+
+type TaskListParams = {
+  userId: number;
+  page?: number;
+  perPage?: number;
+  search?: string;
+  ordination?: string;
+};
 
 type CreateTaskDTO = Omit<Task, "id" | "created_at" | "updated_at">;
 type UpdateTaskDTO = Partial<Omit<Task, "id" | "user_id" | "created_at">>;
