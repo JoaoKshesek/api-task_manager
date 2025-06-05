@@ -1,4 +1,4 @@
-# API - Task Manage
+# API - Task Manager
 
 Aplicativo feito em Express
 
