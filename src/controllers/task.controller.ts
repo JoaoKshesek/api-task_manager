@@ -47,12 +47,9 @@ export const getTaskById = async (req: Request, res: Response): Promise<any> => 
 
     return res.json({
       ...task,
-      start_date_original: task.start_date,
-      start_date_formatted: task.start_date,
-      due_date_original: task.due_date,
-      due_date_formatted: task.due_date,
+      start_date: task.start_date,
+      due_date: task.due_date,
     });
-
   } catch (error) {
     return res.status(400).json({ error: "Erro ao buscar tarefa", details: error });
   }
