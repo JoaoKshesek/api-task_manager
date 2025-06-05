@@ -23,6 +23,8 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 
 Altere as configurações no `.env` antes de continuar com os passos da instalação. Caso ele não exista copie o arquivo `.env.example` para `.env`
 
+Um valor seguro para JWT_SECRET deve ser gerado e inserido no arquivo `.env`. Você pode gerar esse segredo utilizando o site [JwtSecret.com](https://jwtsecret.com/generate).
+
 #### Instalar dependências
 
 ```bash
@@ -39,4 +41,4 @@ $ docker-compose up -d --build
 
 ## 📦 Desenvolvimento
 
-Acesse a aplicação na url: http://localhost:3333
+Conecte-se à aplicação por meio da URL: http://localhost:3333
