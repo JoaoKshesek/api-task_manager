@@ -6,9 +6,9 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 
-RUN npx knex migrate:latest
-
 COPY . .
+
+RUN npx knex migrate:latest
 
 RUN npm run build
 
